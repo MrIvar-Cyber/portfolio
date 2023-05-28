@@ -1,0 +1,116 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/contacto.css"> 
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <title>Contacto - SmoothSound</title> 
+    </head>
+<body>	
+  
+    <nav>
+        <img src="../img/logo.png" id="pimgnav">
+        <span id="psmsoundnav">SmoothSound</span>
+
+
+        <a href="../html/logindanihtml.html" target="_blank">
+        <span id="login">Login</span>
+        <img src="../img/login.png" id="pimglogin">
+        </a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="danihtml.html">Planes</a></li>
+            <li><a href="miguel.html">About Us</a></li>
+            <li><a href="#" style="color: cyan;">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+	<div class="contact_form">
+
+		<div class="formulario">			
+      <h1 style="color: black;">Formulario de contacto</h1>
+				<h3 style="color: black;">Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+					<form action="mailto:raul.rodriguez@gmail.com" method="post">										
+								<p>
+									<label for="nombre" class="colocar_nombre"><span style="color: black;">Nombre</span>
+										<span class="obligatorio">*</span>
+									</label>
+									<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email"><span style="color: black;">Email</span>
+										<span class="obligatorio">*</span>
+									</label>
+									<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefono"><span style="color: black;">Teléfono</span>
+									</label>
+									<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+								</p>		
+							
+								<p>
+									<label for="website" class="colocar_website"><span style="color: black;">Sitio web</span>
+									</label>
+									<input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+								</p>		
+							
+								<p>
+									<label for="asunto" class="colocar_asunto"><span style="color: black;">Asunto</span>
+										<span class="obligatorio">*</span>
+									</label>
+									<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+								</p>		
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje"><span style="color: black;">Mensaje</span>
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
+
+
+    <footer>
+        <div class="pfootercontent">
+            <h3>SmoothSound</h3>
+            <p>Somos una empresa dedicada a la reproducción de música totalmente gratuita con planes premium para mejorar su experiencia. Nuestra misión es brindar la mejor calidad posible para que cada canción sea única.</p>
+            <ul class="socials">
+                <li><a href="#"><img src="../img/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/linkedin.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/instagram.png" alt=""></a></li>
+             </ul>
+        </div>
+        <div class="pfooterbottom">
+            <p>copyright &copy;2023 <a href=”#”>SmoothSound</a></p>
+            <div class="pfootermenu">
+                <ul class=”f-menu”>
+                   <li><a href=””>Home</a></li>
+                   <li><a href=””>About</a></li>
+                   <li><a href=””>Contact</a></li>
+                   <li><a href=””>Blog</a></li>
+                </ul>
+               </div>
+         </div>
+    </div>
+    </footer> 
+</body>
+</html>

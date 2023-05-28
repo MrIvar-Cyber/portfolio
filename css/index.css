@@ -1,0 +1,99 @@
+/*Fuentes y CSS genérico*/
+@font-face {
+    font-family: FontContent;
+    src: url(../typo/content_typo.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FontContent;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+
+    height: 916px;
+    background: url(../img/prueba3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*Código para el NAV - menu*/
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header{
+    background: black
+}
+
+header p{
+    margin: 20px auto 0px 10%;
+    color: white;
+}
+
+nav{
+    align-items: center;
+    /*arriba derecha abajo izquierda*/
+    margin: 20px 10% 20px auto;
+}
+
+nav li{
+    display: inline;
+    margin: 0px 40px 0px 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Código del MAIN*/
+
+.texto-container{
+    width: 800px;
+    color: black;
+    margin: 250px 0px 0px 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    padding: 30px 50px 30px 50px;
+}
+
+#titulo{
+    font-size: 50px;
+}
+
+#texto{
+    margin-top: 30px;
+    font-size: 20px ;
+}
+
+#meninsuit{
+    width: 500px;
+    position: absolute;
+    right: 230px;
+    bottom: 0;
+    filter: grayscale(70%);
+}
+
+#btn-sabermas{
+    width: 150px;
+    padding: 15px;
+    border-radius: 40px;
+    margin-top: 30px;
+    display: inline-block;
+    border-color: transparent;
+}
+#btn-sabermas a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

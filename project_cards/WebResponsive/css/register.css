@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    color: white;
+  }
+  
+  body {
+      background: linear-gradient(to right, #3F5EFB, #FC466B);
+    }
+    
+   /* TODO EL CONTENIDO DE ABAJO TIENE QUE VER CON EL NAV / MENU */
+   #pimglogin{
+    float: right;
+    padding: 9px;
+  }
+  
+  #login {
+    float: right;
+    font-size: 32px;
+    margin-right: 30px;
+  }
+  
+  #login img{
+    width: 18px;
+  }
+
+nav{
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+#pimgnav {
+    width: 40px;
+    float: left;
+    margin-left: 20px;
+}
+
+#psmsoundnav{
+    float: left;
+    font-size: 32px;
+    margin-left: 1%;
+}
+
+nav li {
+    display: inline;
+    font-size: 27px;
+    margin: 20px 20px 20px 20px;
+}
+
+nav ul{
+    margin-right: 5%;
+}
+
+nav li a{ 
+    text-decoration: none; 
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    background:rgba(202, 202, 202, 0.3);
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+    
+    .container {
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      top: 75%;
+      left: 50%;
+    }
+    
+    form {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 3em;
+      height: 500px;
+      border-radius: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(10px);
+              backdrop-filter: blur(10px);
+      box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      top: -7rem;
+    }
+    form p {
+      font-weight: 500;
+      color: #fff;
+      opacity: 0.7;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 60px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    form a {
+      text-decoration: none;
+      color: #ddd;
+      font-size: 18px;
+    }
+    form a:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+    form a:active {
+      text-shadow: none;
+    }
+    form input {
+      background: transparent;
+      width: 200px;
+      padding: 1em;
+      margin-bottom: 2em;
+      border: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 5000px;
+      -webkit-backdrop-filter: blur(5px);
+              backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    form input:hover {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+    form input[type="email"]:focus, form input[type="password"]:focus {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+    form input[type="button"] {
+      margin-top: 10px;
+      width: 150px;
+      font-size: 1rem;
+    }
+    form input[type="button"]:hover {
+      cursor: pointer;
+    }
+    form input[type="button"]:active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    ::placeholder {
+      font-family: 'Teko', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    
+    .drop {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+      position: absolute;
+    }
+    
+    
+    a,input:focus, select:focus, textarea:focus, button:focus {
+      outline: none;
+    }
+  
+    #register-btn{
+      padding: 0 20px 0 20px;
+      margin-left: 10%;
+      background-color: rgba(227,227,236,0.2);
+      border-radius: 20px;
+      border: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    
+  
+  
+    }
+  
+    footer{
+      position: absolute;
+      bottom: -40%;
+      left: 0;
+      right: 0;
+      background: #111;
+      height: 250px;
+      width: 100vw;
+      padding-top: 30px;
+      color: #fff;
+  }
+  
+  .pfootercontent{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .pfootercontent h3{
+      font-size: 2.7rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 3rem;
+  }
+  
+  .pfootercontent p{
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 25px;
+      color: #cacdd2;
+  }
+  
+  /* codigo para mostrar las redes sociales en el footer */
+  
+  .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .socials li{
+      margin: 0 10px;
+  }
+  .socials a{
+      text-decoration: none;
+  }
+  .socials a img{
+      width: 24px;
+  }
+  /* parte de abajo del footer*/
+  
+  .pfooterbottom{
+      background: #000;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+  }
+  
+  .pfooterbottom p{
+      float: left;
+      font-size: 20px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+  }
+  
+  .pfooterbottom p a{
+      color:#44bae8;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  
+  .pfooterbottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+  }
+  
+  .pfootermenu{
+      float: right;
+    }
+    
+  .pfootermenu ul{
+      display: flex;
+  }
+    
+  .pfootermenu ul li{
+    padding-right: 10px;
+    display: block;
+    font-size: 24px;
+  }
+    
+  .pfootermenu ul li a{
+      color: #cfd2d6;
+      text-decoration: none;
+  }
+    
+  .pfootermenu ul li a:hover{
+      color: #27bcda;
+  }
+  @media (max-width:500px) {
+      .footer-menu ul{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      footer{
+          position: absolute;
+          bottom: 0;
+      }
+      form{
+        position: relative;
+        margin-top: 40%;
+      }
+  }
+  
+  @media (max-width:768px) {
+      .footer-menu ul{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      footer{
+          position: absolute;
+          bottom: -35%;
+      }
+  }

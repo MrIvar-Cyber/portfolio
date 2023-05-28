@@ -1,0 +1,313 @@
+/*Fuentes y CSS genérico*/
+@font-face {
+    font-family: FontContent;
+    src: url(../typo/content_typo.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FontContent;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+/*Código para el NAV - menu*/
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header{
+    background: black
+}
+
+header p{
+    margin: 20px auto 0px 10%;
+    color: white;
+}
+
+nav{
+    align-items: center;
+    /*arriba derecha abajo izquierda*/
+    margin: 20px 10% 20px auto;
+}
+
+nav li{
+    display: inline;
+    margin: 0px 40px 0px 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*CODIGO GLOWING PARTICLES EFFECT*/
+
+.container-web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.glowing{
+    position: relative;
+    min-width: 750px;
+    height: 750px;
+    margin: -150px;
+    transform-origin: right;
+    animation: colorChange 5s linear infinite;
+}
+
+/*TODOS LOS ELEMENTOS .GLOWING PARES SE LES APLICA ESA LÍNEA DE CÓDIGO*/
+.glowing:nth-child(even) {
+    transform-origin: left;
+}
+
+/*PARA QUE LA ANIMACION LLAMADA COLORCHANGE HAGA ALGO, HAY QUE DEFINIR QUE TIENE QUE HACER
+LOS % SON PARA DECIR COMO EMPIEZA Y COMO TERMINA LA ANIMACIÓN, PUEDES PONER TODOS LOS % QUE
+QUIERAS, PERO LOS MÁS COMÚNES SON 0, 25, 50, 75 Y 100*/
+@keyframes colorChange {
+    0%{
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*EL CÓDIGO DE ABAJO USA LA FUNCIÓN CALC() PARA CALCULAR EL TOP, BOTTOM, LEFT Y RIGHT, FUNCIONA
+DE TAL FORMA QUE COGE 80PX (O LO QUE LE INDIQUEMOS) Y LO MULTIPLICA POR EL VALOR QUE
+LE HAYAMOS ASIGNADO A LA VARIABLE --I EN EL HTML, SE LLAMA --I COMO SE PODRÍA LLAMAR --PATATA,
+PERO PUSE --I POR PROGRAMACIÓN*/
+.glowing span {
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+.glowing span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+
+/* nth-child se utiliza para especificar que elemento hijo sin necesidad de asignarle un ID
+ o clase específico para modificarlo. Xn +- Y, esta fórmula significa el valor que sea X, en
+ este caso 3, significa que cada 3 span, aplique estos estilos, y el valor que este en Y, en 
+ este caso 1, significa el elemento hijo por el que quieres que este ciclo de cada 3 (span)
+ se apliquen estos estilos (en este caso "span" porque es lo que estamos usando pero puede ser
+ cualquier cosa */
+.glowing span:nth-child(3n + 1):before {
+    background: rgba(134, 255, 0, 1);
+    box-shadow: 0 0 20px rgba(134, 255, 0, 1),
+                0 0 40px rgba(134, 255, 0, 1),
+                0 0 60px rgba(134, 255, 0, 1),
+                0 0 80px rgba(134, 255, 0, 1),
+                0 0 0 8px rgba(134, 255, 0, .1);
+}
+
+.glowing span:nth-child(3n + 2):before {
+    background: rgba(255, 214, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 214, 0, 1),
+                0 0 40px rgba(255, 214, 0, 1),
+                0 0 60px rgba(255, 214, 0, 1),
+                0 0 80px rgba(255, 214, 0, 1),
+                0 0 0 8px rgba(255, 214, 0, .1);
+}
+
+.glowing span:nth-child(3n + 3):before {
+    background: rgba(0, 226, 255, 1);
+    box-shadow: 0 0 20px rgba(0, 226, 255, 1),
+                0 0 40px rgba(0, 226, 255, 1),
+                0 0 60px rgba(0, 226, 255, 1),
+                0 0 80px rgba(0, 226, 255, 1),
+                0 0 0 8px rgba(0, 226, 255, .1);
+}
+
+.glowing span:nth-child(3n + 1){
+    animation: animate 10s alternate infinite;
+}
+
+/* Asignamos un custom name de una animación con el nombre "animate" y le decimos que queremos
+que la animación haga */
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.glowing span:nth-child(3n + 2){
+    animation: animate-reverse 3s alternate infinite;
+}
+@keyframes animate-reverse {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.glowing span:nth-child(3n + 3){
+    animation: animate 8s alternate infinite;
+}
+
+
+
+
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+
+/* hover es un selector que se aplica una vez pasamos por encima el ratón, en este caso
+es para que al poner el raton encima de la carta, se suba un poco, es un efecto visual */
+.container .box:hover{
+    transform: translateY(-20px);
+}
+
+/*el selector ::before o :before en CSS2.1, se utiliza para añadir "contenido/estilos" antes de un 
+elemento */
+.container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+/*el selector ::after o :after en CSS2.1, se utiliza para añadir "contenido/estilos" después 
+de un elemento */
+.container .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+
+/* en este caso no usamos la fórmula (Xn + Y), ya que queremos directamente seleccionar el 
+.box 2*/
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.container .box .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container .box .content h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content p {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container .box .content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*CARTA EXTRA*/
+
+.container .box:nth-child(4)::before,
+.container .box:nth-child(4)::after
+{
+    background: linear-gradient(315deg, #e0d534, #7bf12c);
+}

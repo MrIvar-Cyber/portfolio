@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    color: white;
+  }
+  
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+}
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #ab4493; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: 250px;
+    width: 100vw;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.pfootercontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pfootercontent h3{
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.pfootercontent p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 25px;
+    color: #cacdd2;
+}
+
+/* codigo para mostrar las redes sociales en el footer */
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials a img{
+    width: 24px;
+}
+/* parte de abajo del footer*/
+
+.pfooterbottom{
+    background: #000;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.pfooterbottom p{
+    float: left;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.pfooterbottom p a{
+    color:#44bae8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.pfooterbottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.pfootermenu{
+    float: right;
+  }
+  
+.pfootermenu ul{
+    display: flex;
+}
+  
+.pfootermenu ul li{
+  padding-right: 10px;
+  display: block;
+  font-size: 24px;
+}
+  
+.pfootermenu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+}
+  
+.pfootermenu ul li a:hover{
+    color: #27bcda;
+}
+
+span{
+  color: white;
+}
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    footer{
+        bottom: 0px;
+    }
+    form{
+      position: relative;
+      margin-top: 40%;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    footer{
+        bottom: 0px;
+    }
+}
+
+   /* TODO EL CONTENIDO DE ABAJO TIENE QUE VER CON EL NAV / MENU */
+   #pimglogin{
+    float: right;
+    padding: 9px;
+  }
+  
+  #login {
+    float: right;
+    font-size: 32px;
+    margin-right: 30px;
+  }
+  
+  #login img{
+    width: 18px;
+  }
+
+nav{
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+#pimgnav {
+    width: 40px;
+    float: left;
+    margin-left: 20px;
+}
+
+#psmsoundnav{
+    float: left;
+    font-size: 32px;
+    margin-left: 1%;
+}
+
+nav li {
+    display: inline;
+    font-size: 27px;
+    margin: 20px 20px 20px 20px;
+}
+
+nav ul{
+    margin-right: 5%;
+}
+
+nav li a{ 
+    text-decoration: none; 
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    background:rgba(202, 202, 202, 0.3);
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
